@@ -1,7 +1,7 @@
 {
-  "name": "vercel-rust",
+  "name": "aschey-vercel-rust",
   "description": "Rust runtime for Vercel Functions.",
-  "version": "3.1.2",
+  "version": "3.1.4",
   "license": "MIT",
   "main": "./dist/index",
   "homepage": "https://github.com/vercel-community/rust",
