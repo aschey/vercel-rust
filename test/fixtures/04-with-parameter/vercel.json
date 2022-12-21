@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "api/[user].rs",
+      "use": "file:/home/aschey/code/vercel-rust2"
+    }
+  ],
+  "probes": [
+    {
+      "path": "/api/[user].rs?user=foo",
+      "status": 200,
+      "mustContain": "user=foo"
+    }
+  ]
+}

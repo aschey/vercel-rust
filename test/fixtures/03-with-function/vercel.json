@@ -1,0 +1,21 @@
+{
+  "builds": [
+    {
+      "src": "api/user.rs",
+      "use": "file:/home/aschey/code/vercel-rust2"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/user",
+      "destination": "/api/user.rs"
+    }
+  ],
+  "probes": [
+    {
+      "path": "/api/user",
+      "status": 200,
+      "mustContain": "user endpoint"
+    }
+  ]
+}
